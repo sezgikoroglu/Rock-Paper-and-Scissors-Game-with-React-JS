@@ -1,0 +1,23 @@
+.footer{
+    width: 100vw;
+  
+        button{
+            position: absolute;
+            padding: 7px 25px;
+            right: 1rem;
+            border-radius: .4rem;
+            border: 3px solid hsl(217, 16%, 45%);
+            color: lighten(hsl(217, 16%, 45%),20%);
+            background: none;
+            font-weight: 600;
+            letter-spacing: 2px;
+            bottom: 1rem;
+    
+            &:hover{
+                background-color: rgba($color: #ffffff, $alpha: .8);
+                color: hsl(229, 25%, 31%);
+                cursor: pointer;
+            }
+        }
+    
+}
