@@ -3,6 +3,7 @@
   
         button{
             position: absolute;
+            transform: translateX(-10rem) translateY(13rem);
             padding: 7px 25px;
             right: 1rem;
             border-radius: .4rem;
@@ -11,7 +12,7 @@
             background: none;
             font-weight: 600;
             letter-spacing: 2px;
-            bottom: 1rem;
+           
     
             &:hover{
                 background-color: rgba($color: #ffffff, $alpha: .8);

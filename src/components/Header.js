@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({score}) => {
     return (
         <div className='header'>
             <div className='names'>
@@ -10,7 +10,7 @@ const Header = () => {
             </div>
             <div className='score'>
                 <p className='title'>Score</p>
-                <p className='number'>0</p>
+                <p className='number'>{score}</p>
             </div>
 
         </div>
