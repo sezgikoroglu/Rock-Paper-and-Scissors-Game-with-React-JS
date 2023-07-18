@@ -7,7 +7,8 @@ const Game = ({myChoice,setScore,score,setShowFooter}) => {
   const [counter,setCounter]=useState(3);
 
   const newHousePick=()=>{
-    const choices=["rock","paper","scissors"];
+    console.log(myChoice)
+    const choices=["rock","scissors","paper"];
     setHouse(choices[Math.floor(Math.random()*3)])
   }
 
@@ -47,7 +48,7 @@ const Game = ({myChoice,setScore,score,setShowFooter}) => {
         setCounter(counter-1);
       },1000)
       : Result();
-
+      console.log(myChoice)
       return () => {
         clearInterval(timer)
       }
@@ -64,7 +65,7 @@ const Game = ({myChoice,setScore,score,setShowFooter}) => {
         </div>
         <div className="game__play">
           <div className="text">
-            { playerWin == "win"  && <span className="text">You Win</span>}
+            { playerWin == "win"   && <span className="text">You Win</span>}
             { playerWin == "lose"  && <span className="text">You Lose</span>}
             { playerWin == "draw"  && <span className="text">Draw</span>}
           </div>
